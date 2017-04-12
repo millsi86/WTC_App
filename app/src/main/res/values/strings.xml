@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_des">WTC</string>
+    <string name="Aerial">WTC Aerial Image</string>
+    <string name="Icon_Tel">Telephone Icon</string>
+    <string name="Icon_Web">Website Icon</string>
+    <string name="Logo">WTC Logo</string>
+    <string name="Pin">Location Pinpoint</string>
+    <string name="Club">Whitchurch Tennis Club</string>
+    <string name="add">St. Francis Road, Whitchurch, Cardiff, CF14 1AW</string>
+    <string name="tel">+44 (0)2920 692856</string>
+    <string name="web">http://www.whitchurchtenniscardiff.co.uk/</string>
+    <string name="lostpassword"><a href="http://www.whitchurchtenniscardiff.co.uk/"> </a> Website </string>
+    <string name="Text"> Set in the popular ‘village’ of Whitchurch in North Cardiff, Whitchurch Tennis Club (WTC) has been in existence for over 100 years. The club features 7 all-weather hard courts (3 floodlit), a practice wall, a large modern clubhouse with a licensed bar and ample parking.\n\n
+All standards of play are catered for from beginner to advanced, with recreational tennis and inter-club league tennis all year round.\n\n
+There’s a year round coaching programme for adults and juniors and the quiet residential area around the club provides a safe, family-friendly environment.\n\n
+New members and visitors are always welcome at WTC!!</string>
+
+</resources>

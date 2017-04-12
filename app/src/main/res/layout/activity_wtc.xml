@@ -4,16 +4,20 @@
     android:id="@+id/activity_wtc"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.wtc_app.WTC">
+    tools:context="com.example.android.wtc_app.WTC"
+    >
 
     <ImageView
         android:id="@+id/aerial"
+        android:contentDescription="@string/Aerial"
         android:layout_width="match_parent"
         android:layout_height="120sp"
         android:scaleType="centerCrop"
         android:src="@drawable/aerial2" />
 
     <ImageView
+        android:id="@+id/WTC_Logo"
+        android:contentDescription="@string/Logo"
         android:layout_width="80sp"
         android:layout_height="120sp"
         android:scaleType="fitCenter"
@@ -27,6 +31,7 @@
         android:textAppearance="?android:textAppearanceLarge"
         android:layout_below="@id/aerial"
         android:layout_marginTop="8dp"
+        android:layout_marginStart="16sp"
         android:layout_marginLeft="16sp" />
 
     <ScrollView
@@ -36,17 +41,19 @@
         android:orientation="vertical"
         android:layout_below="@+id/header"
         android:layout_marginTop="16sp"
-        android:layout_marginLeft="32sp"
+        android:layout_marginStart="32sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginBottom="16sp"
         android:layout_marginRight="16sp"
-        android:layout_marginBottom="16sp">
+        android:layout_marginLeft="32sp">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/header">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/location"
+                android:contentDescription="@string/Pin"
                 android:layout_width="16dp"
                 android:layout_height="16dp"
                 android:src="@drawable/location"/>
@@ -56,18 +63,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/add"
+                android:clickable="true"
                 android:autoLink="map"
+                android:onClick="Map"
                 android:textAppearance="?android:textAppearanceSmall"
-                android:layout_toRightOf="@+id/location"
-                android:layout_marginLeft="16dp"/>
+                android:layout_toEndOf="@+id/location"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/location" />
 
             <ImageView
                 android:id="@+id/phone"
+                android:contentDescription="@string/Icon_Tel"
                 android:layout_width="16dp"
                 android:layout_height="16dp"
                 android:layout_marginTop="16dp"
                 android:src="@drawable/phone"
                 android:layout_below="@id/address"
+                android:layout_alignStart="@id/location"
                 android:layout_alignLeft="@id/location" />
 
             <TextView
@@ -79,28 +92,32 @@
                 android:textAppearance="?android:textAppearanceSmall"
                 android:layout_marginTop="16dp"
                 android:layout_below="@id/address"
-                android:layout_alignLeft="@id/address"/>
+                android:layout_alignStart="@id/address"
+                android:layout_alignLeft="@id/address" />
 
             <ImageView
                 android:id="@+id/web"
+                android:contentDescription="@string/Icon_Web"
                 android:layout_width="16dp"
                 android:layout_height="16dp"
                 android:layout_marginTop="16dp"
                 android:src="@drawable/web"
                 android:layout_below="@id/tel"
-                android:layout_alignLeft="@id/phone"
-                />
+                android:layout_alignStart="@id/phone"
+                android:layout_alignLeft="@id/phone" />
 
             <TextView
                 android:id="@+id/Website"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/web"
+                android:clickable="true"
+                android:autoLink="web"
                 android:textAppearance="?android:textAppearanceSmall"
                 android:layout_marginTop="16dp"
                 android:layout_below="@id/tel"
-                android:layout_alignLeft="@id/tel"
-                android:autoLink="web">
+                android:layout_alignStart="@id/tel"
+                android:layout_alignLeft="@id/tel">
             </TextView>
 
             <LinearLayout
